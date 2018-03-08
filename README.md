@@ -1,5 +1,13 @@
 # Jama API
 
+## Description
+
+Use this library to access to your [JAMA Contour](https://www.jamasoftware.com/platform/) instance. The source code was generated with [Swagger Codegen](https://swagger.io/swagger-codegen/) with the following command.
+
+```shell
+java -jar swagger-codegen-cli-3.0.0.jar generate -i swagger.json -l java
+```
+
 ## Requirements
 
 Building the API client library requires [Maven](https://maven.apache.org/) to be installed.
