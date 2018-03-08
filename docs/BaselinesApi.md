@@ -1,7 +1,5 @@
 # BaselinesApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getBaseline**](BaselinesApi.md#getBaseline) | **GET** /baselines/{baselineId} | Get the baseline with the specified ID

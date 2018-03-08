@@ -1,7 +1,5 @@
 # ReleasesApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addRelease**](ReleasesApi.md#addRelease) | **POST** /releases | Create a new release

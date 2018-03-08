@@ -1,7 +1,5 @@
 # PicklistoptionsApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getPicklistOption**](PicklistoptionsApi.md#getPicklistOption) | **GET** /picklistoptions/{picklistOptionId} | Get the pick list option with the specified ID

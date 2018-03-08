@@ -1,7 +1,5 @@
 # ItemtypesApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getItem**](ItemtypesApi.md#getItem) | **GET** /itemtypes/{itemTypeId} | Get the item type with the specified ID

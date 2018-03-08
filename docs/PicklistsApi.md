@@ -1,7 +1,5 @@
 # PicklistsApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addPickListOptionToPickList**](PicklistsApi.md#addPickListOptionToPickList) | **POST** /picklists/{picklistId}/options | Create a new pick list option for the pick list with the specified ID

@@ -1,7 +1,5 @@
 # ProjectsApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addProject**](ProjectsApi.md#addProject) | **POST** /projects | Create a new project

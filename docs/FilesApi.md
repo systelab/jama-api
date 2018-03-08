@@ -1,7 +1,5 @@
 # FilesApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**downloadFile**](FilesApi.md#downloadFile) | **GET** /files | Download attachment file from the attachment with the specified Jama URL

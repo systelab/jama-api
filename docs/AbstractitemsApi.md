@@ -1,7 +1,5 @@
 # AbstractitemsApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getAbstractItems**](AbstractitemsApi.md#getAbstractItems) | **GET** /abstractitems | Search for items, test plans, test cycles, test runs, or attachments

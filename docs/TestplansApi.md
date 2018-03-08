@@ -1,7 +1,5 @@
 # TestplansApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addAttachmentToItem**](TestplansApi.md#addAttachmentToItem) | **POST** /testplans/{id}/attachments | Add an existing attachment to the item with the specified ID

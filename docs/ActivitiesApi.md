@@ -1,7 +1,5 @@
 # ActivitiesApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getActivities**](ActivitiesApi.md#getActivities) | **GET** /activities | Get all activities in the project with the specified ID

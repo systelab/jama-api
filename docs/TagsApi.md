@@ -1,7 +1,5 @@
 # TagsApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addTagToProject**](TagsApi.md#addTagToProject) | **POST** /tags | Create a new tag in the project with the specified ID

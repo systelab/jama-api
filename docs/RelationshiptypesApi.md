@@ -1,7 +1,5 @@
 # RelationshiptypesApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getRelationshipType**](RelationshiptypesApi.md#getRelationshipType) | **GET** /relationshiptypes/{id} | Get the relationship type with the specified ID

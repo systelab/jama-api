@@ -1,7 +1,5 @@
 # RelationshipsApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**clearSuspectLink**](RelationshipsApi.md#clearSuspectLink) | **DELETE** /relationships/{relationshipId}/suspect | Remove an existing suspect link for the relationship with the specified ID

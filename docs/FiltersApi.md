@@ -1,7 +1,5 @@
 # FiltersApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
-
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getFilter**](FiltersApi.md#getFilter) | **GET** /filters/{id} | Get the filter with the specified ID

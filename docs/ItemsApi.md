@@ -1,6 +1,5 @@
 # ItemsApi
 
-All URIs are relative to *https://jama.systelab.net/contour/rest/latest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
