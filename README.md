@@ -8,6 +8,25 @@ Use this library to access to your [JAMA Contour](https://www.jamasoftware.com/p
 java -jar swagger-codegen-cli-3.0.0.jar generate -i swagger.json -l java
 ```
 
+## Getting Started
+
+To get you started you can simply clone the `jama-api` repository and install the dependencies:
+
+### Prerequisites
+
+You need [git][git] to clone the `jama-api` repository.
+
+You will need [Java™ SE Development Kit 8][jdk-download] and [Maven][maven].
+
+### Clone `jama-api`
+
+Clone the `jama-api` repository using git:
+
+```bash
+git clone https://github.com/systelab/jama-api.git
+cd jama-api
+```
+
 ## Publish
 
 Generate the JAR by executing:
@@ -24,7 +43,18 @@ Then browse to https://jitpack.io/ and follow the instructions. JitPack is an ea
 
 ### Maven users
 
-Add this dependency to your project's POM:
+Add the https://jitpack.io repository to your project's POM:
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+Add the dependency:
 
 ```xml
 <dependency>
@@ -492,5 +522,7 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 
 ## Author
 
-
+[git]: https://git-scm.com/
+[maven]: https://maven.apache.org/download.cgi
+[jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads
 
