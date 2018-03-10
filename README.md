@@ -8,25 +8,19 @@ Use this library to access to your [JAMA Contour](https://www.jamasoftware.com/p
 java -jar swagger-codegen-cli-3.0.0.jar generate -i swagger.json -l java
 ```
 
-## Requirements
+## Publish
 
-Building the API client library requires [Maven](https://maven.apache.org/) to be installed.
-
-## Installation
-
-To install the API client library to your local Maven repository, simply execute:
+Generate the JAR by executing:
 
 ```shell
-mvn install
+mvn package
 ```
 
-To deploy it to a remote Maven repository instead, configure the settings of the repository and execute:
+Create a new release in the GitHub repository, for example v1.0.0 and add the generated jama-api-1.0.0.jar file to the release.
 
-```shell
-mvn deploy
-```
+Then browse to https://jitpack.io/ and follow the instructions. JitPack is an easy to use package repository for Git.
 
-Refer to the [official documentation](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html) for more information.
+## Use the Library
 
 ### Maven users
 
@@ -34,18 +28,25 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>com.systelab</groupId>
-    <artifactId>jama-api</artifactId>
-    <version>1.0.0</version>
-    <scope>compile</scope>
+	<groupId>com.github.systelab</groupId>
+	<artifactId>jama-api</artifactId>
+    <version>v1.0.0</version>
 </dependency>
+```
+
+and simply execute:
+
+```shell
+mvn install
 ```
 
 ### Others
 
 At first generate the JAR by executing:
 
-    mvn package
+```shell
+mvn package
+```
 
 Then manually install the following JARs:
 
@@ -69,35 +70,19 @@ import java.util.*;
 public class AbstractitemsApiExample {
 
     public static void main(String[] args) {
-        ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+        ApiClient client = Configuration.getDefaultApiClient();
+        client.setBasePath("https://127.0.0.1/contour/rest/latest");
+
         // Configure HTTP basic authorization: basic
         HttpBasicAuth basic = (HttpBasicAuth) defaultClient.getAuthentication("basic");
         basic.setUsername("YOUR USERNAME");
         basic.setPassword("YOUR PASSWORD");
 
-        // Configure OAuth2 access token for authorization: oauth2
-        OAuth oauth2 = (OAuth) defaultClient.getAuthentication("oauth2");
-        oauth2.setAccessToken("YOUR ACCESS TOKEN");
 
-        AbstractitemsApi apiInstance = new AbstractitemsApi();
-        List<Integer> project = Arrays.asList(56); // List<Integer> | 
-        List<Integer> itemType = Arrays.asList(56); // List<Integer> | 
-        List<String> documentKey = Arrays.asList("documentKey_example"); // List<String> | 
-        List<Integer> release = Arrays.asList(56); // List<Integer> | 
-        List<String> createdDate = Arrays.asList("createdDate_example"); // List<String> | Filter datetime fields after a single date or within a range of values. Provide one or two values in ISO8601 format (milliseconds or seconds) - \"yyyy-MM-dd'T'HH:mm:ss.SSSZ\" or \"yyyy-MM-dd'T'HH:mm:ssZ\"
-        List<String> modifiedDate = Arrays.asList("modifiedDate_example"); // List<String> | Filter datetime fields after a single date or within a range of values. Provide one or two values in ISO8601 format (milliseconds or seconds) - \"yyyy-MM-dd'T'HH:mm:ss.SSSZ\" or \"yyyy-MM-dd'T'HH:mm:ssZ\"
-        List<String> lastActivityDate = Arrays.asList("lastActivityDate_example"); // List<String> | Filter datetime fields after a single date or within a range of values. Provide one or two values in ISO8601 format (milliseconds or seconds) - \"yyyy-MM-dd'T'HH:mm:ss.SSSZ\" or \"yyyy-MM-dd'T'HH:mm:ssZ\"
-        List<String> contains = Arrays.asList("contains_example"); // List<String> | Filter on the text contents of the item. Strings taken literally. Multiple 'contains' values will be bitwise ORed.
-        List<String> sortBy = Arrays.asList("sortBy_example"); // List<String> | Sort orders can be added with the name of the field by which to sort, followed by .asc or .desc (e.g. 'name.asc' or 'modifiedDate.desc'). If not set, this defaults to sorting by sequence.asc and then documentKey.asc
-        Integer startAt = 56; // Integer | 
-        Integer maxResults = 56; // Integer | If not set, this defaults to 20. This cannot be larger than 50
-        List<String> include = Arrays.asList("include_example"); // List<String> | Links to include as full objects in the linked map
+        ProjectsApi api=new ProjectsApi();
         try {
-            ItemDataListWrapper result = apiInstance.getAbstractItems(project, itemType, documentKey, release, createdDate, modifiedDate, lastActivityDate, contains, sortBy, startAt, maxResults, include);
-            System.out.println(result);
+            Project project=api.getProject(new Integer(30),null).getData();
         } catch (ApiException e) {
-            System.err.println("Exception when calling AbstractitemsApi#getAbstractItems");
             e.printStackTrace();
         }
     }
